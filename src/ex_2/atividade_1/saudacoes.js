@@ -1,9 +1,13 @@
 import { View, Text} from 'react-native';
 
-export default function Saudacoes({saudacao}) {
+const Saudacoes = (props) => {
     return (
-      <View style={styles.container}>
-        <Text>{saudacao}</Text>
+      <View>
+        <Text style={{textAlign: 'center'}}>
+          Olá {props.name}
+        </Text>
       </View>
     );
   }
+
+export default Saudacoes;
