@@ -5,24 +5,36 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 8,
         width: '100%',
-        borderRadius: 20,
         alignItems:'center',
-        // justifyContent:'space-around',
+        justifyContent:'center',
         backgroundColor: '#f5f5f5',
-        // flexDirection:'row',
+    },
+
+    container2: {
+        justifyContent:'space-around',
+        flexDirection:'row',
+        padding: 70,
     },
 
     titulo: {
         margin: 8,
-        fontSize: 40,
+        fontSize: 15,
         marginBottom: 10,
         fontWeight: 'bold',
+    },
+
+    inc: {
+        marginTop: 60,
+        fontSize: 40,
+        justifyContent:'center',
+        alignItems:'center',
+        fontWeight: 'bold', 
     },
 
     botao: {
         margin: 40,
         padding: 16,
-        width: '20%',
+        width: '25%',
         alignItems: 'center',
         backgroundColor: '#000',
     },
@@ -34,17 +46,12 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 
-    bottom: {
-        margin: 40,
-        padding: 16,
-        width: '20%',
-        alignItems: 'center',
-        backgroundColor: '#000',
-    },
-
-    txtBot: {
-
-    },
+    zerar: {
+        fontSize: 30,
+        fontWeight: 'bolder',
+        color: '#f5f5f5',
+        justifyContent: 'center',
+    }
 });
 
 export default styles;

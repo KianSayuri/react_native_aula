@@ -14,8 +14,12 @@ export default function Exemplo_4 (){
 
     return (
         <View style = {styles.container} >
-            <View>
-                <Text style = {styles.titulo}>Atividade 3</Text>
+
+             <Text style = {styles.titulo}>
+                    Atividade 3
+                </Text>
+
+            <View style = {styles.container2}>
       
                 <TouchableOpacity 
                     style ={ styles.botao} 
@@ -27,7 +31,7 @@ export default function Exemplo_4 (){
                 </Text>
                 </TouchableOpacity>
 
-                <Text style ={styles.titulo}> 
+                <Text style ={styles.inc}> 
                     {numero} 
                 </Text>
             
@@ -39,15 +43,18 @@ export default function Exemplo_4 (){
                     +
                 </Text>
                 </TouchableOpacity>
+                
+            </View>
+
                 <TouchableOpacity
                 style ={ styles.botao} 
                 onPress={() => {}}
                 >
-                <Text style ={styles.txtBotao}> 
+                <Text style ={styles.zerar}> 
                     Zerar
                 </Text>
                 </TouchableOpacity>
-            </View>
+            
         </View>
         
     );
