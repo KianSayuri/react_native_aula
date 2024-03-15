@@ -5,11 +5,22 @@ import styles from './styles';
 
 export default function Exemplo_4 (){
 
-    const [numero, setNumero] = useState(3);
+    const [numero, setNumero] = useState(0);
 
     function incremento () {
-        numero++;
-        console.log(numero);
+        const incr = numero + 1;
+        setNumero(incr);
+        //console.log(numero);
+    }
+
+    function retirada(){
+        const ret = numero - 1;
+        setNumero (ret);
+    }
+
+    function resetar() {
+        const reset = 0;
+        setNumero(reset);
     }
 
     return (
@@ -23,7 +34,7 @@ export default function Exemplo_4 (){
       
                 <TouchableOpacity 
                     style ={ styles.botao} 
-                    onPress={() => {''}}
+                    onPress={() => retirada()}
                 >
 
                 <Text style ={styles.txtBotao}> 
@@ -37,7 +48,7 @@ export default function Exemplo_4 (){
             
                 <TouchableOpacity
                 style ={ styles.botao} 
-                onPress={() => {}}
+                onPress={() => incremento()}
                 >
                 <Text style ={styles.txtBotao}> 
                     +
@@ -47,10 +58,10 @@ export default function Exemplo_4 (){
             </View>
 
                 <TouchableOpacity
-                style ={ styles.botao} 
-                onPress={() => {}}
+                style ={ styles.zerar} 
+                onPress={() => resetar()}
                 >
-                <Text style ={styles.zerar}> 
+                <Text style ={styles.txtBotao}> 
                     Zerar
                 </Text>
                 </TouchableOpacity>

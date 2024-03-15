@@ -2,9 +2,8 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        padding: 8,
-        width: '100%',
+        border: '5px solid #000',
+        width: '70%',
         alignItems:'center',
         justifyContent:'center',
         backgroundColor: '#f5f5f5',
@@ -13,12 +12,11 @@ const styles = StyleSheet.create({
     container2: {
         justifyContent:'space-around',
         flexDirection:'row',
-        padding: 70,
     },
 
     titulo: {
         margin: 8,
-        fontSize: 15,
+        fontSize: 40,
         marginBottom: 10,
         fontWeight: 'bold',
     },
@@ -43,13 +41,18 @@ const styles = StyleSheet.create({
         fontSize: 50,
         fontWeight: 'bolder',
         color: '#f5f5f5',
-        justifyContent: 'center',
+        // justifyContent: 'center',
     },
 
     zerar: {
-        fontSize: 30,
+        width: '50%',
+        margin:20,
+        fontSize: 25,
         fontWeight: 'bolder',
-        color: '#f5f5f5',
+        backgroundColor: '#000',
+        display: 'flex',
+        flexDirection:'row',
+        alignItems: 'center',
         justifyContent: 'center',
     }
 });
