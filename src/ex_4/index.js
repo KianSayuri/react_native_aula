@@ -1,5 +1,5 @@
 import { useState} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, Pressable} from 'react-native';
 
 import styles from './styles';
 
@@ -32,7 +32,7 @@ export default function Exemplo_4 (){
 
             <View style = {styles.container2}>
       
-                <TouchableOpacity 
+                <Pressable 
                     style ={ styles.botao} 
                     onPress={() => retirada()}
                 >
@@ -40,31 +40,31 @@ export default function Exemplo_4 (){
                 <Text style ={styles.txtBotao}> 
                 -
                 </Text>
-                </TouchableOpacity>
+                </Pressable>
 
                 <Text style ={styles.inc}> 
                     {numero} 
                 </Text>
             
-                <TouchableOpacity
+                <Pressable
                 style ={ styles.botao} 
                 onPress={() => incremento()}
                 >
                 <Text style ={styles.txtBotao}> 
                     +
                 </Text>
-                </TouchableOpacity>
+                </Pressable>
                 
             </View>
 
-                <TouchableOpacity
+                <Pressable
                 style ={ styles.zerar} 
                 onPress={() => resetar()}
                 >
                 <Text style ={styles.txtBotao}> 
                     Zerar
                 </Text>
-                </TouchableOpacity>
+                </Pressable>
             
         </View>
         
