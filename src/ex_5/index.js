@@ -35,7 +35,7 @@ export default function Exemplo_5 () {
 
             <TextInput
                 style = {styles.txtEntrada}
-                placeholder = 'Outro texto'
+                //placeholder = 'Outro texto'
                 onChangeText = {(entrada) => setMens2 (entrada)}
                 value = {mens2}
                 /*
